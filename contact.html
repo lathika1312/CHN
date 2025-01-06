@@ -98,6 +98,18 @@
 
 
     <!-- Navbar & Carousel Start -->
+     <style>
+        /* Add this to your styles.css file */
+.nav-link {
+    color: black !important;  /* Default static color */
+    transition: color 0.3s ease-in-out;  /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+    color: #06A3DA !important;  /* Hover color */
+}
+
+     </style>
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0">
@@ -109,13 +121,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <div class="nav-item dropdown">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link" style="color: black !important;">Home</a>
                     </div>  
                     <div class="nav-item dropdown">
-                        <a href="about.html" class="nav-item nav-link">About Us</a>
+                        <a href="about.html" class="nav-item nav-link" style="color: black !important;">About Us</a>
                     </div>                   
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black !important;">Services</a>
                         <div class="dropdown-menu m-0 p-3" style="min-width: 600px;">
                             <div class="row">
                                 <div class="col-4">
@@ -137,7 +149,7 @@
                         </div>
                     </div>                    
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: black !important;">Products</a>
                         <div class="dropdown-menu m-0">
                             <a href="service-1.html" class="dropdown-item">Service 1</a>
                             <a href="service-2.html" class="dropdown-item">Service 2</a>
@@ -146,15 +158,16 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="careers.html" class="nav-item nav-link">Careers</a>
+                        <a href="careers.html" class="nav-item nav-link" style="color: black !important;">Careers</a>
                     </div> 
                 </div>
-                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal"></butaton>
+                <button type="button" class="btn text-primary ms-3" data-bs-toggle="modal"></button>
                 <a href="contact.html" class="btn btn-primary py-2 px-3 ms-3">Contact Us</a>
             </div>
         </nav>
         <br><br><br>
     </div>
+    
     <!-- Navbar End -->
 
 
