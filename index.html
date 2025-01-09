@@ -35,11 +35,29 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner"></div>
-    </div>
-    <!-- Spinner End -->
+   <!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <img src="img/CHN-logo.png" alt="Loading" class="logo-rotate" style="max-width: 150px; height: auto;">
+</div>
+<!-- Spinner End -->
+
+<style>
+/* Keyframes for rotation */
+@keyframes rotateLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Applying rotation animation to the logo */
+.logo-rotate {
+    animation: rotateLogo 2s linear infinite;
+}
+</style>
+
 
 
     <!-- Topbar Start -->
