@@ -21,6 +21,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"></script>
     <link href="/cdn.jsdelivr.net/npm/bootstrap-icons%401.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -208,7 +209,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-laptop-code mr-2"></i><br>Frontend Developer</h5>
                                 <p class="card-text">Build engaging user interfaces and bring our designs to life. Become Our Dev Team.</p>
-                                <a href="frontend-developer.html" class="btn btn-outline-primary btn-sm">Apply Now!</a>
+                                <button class="btn btn-outline-primary btn-sm apply-btn" data-toggle="modal" data-target="#applyModal">Apply Now!</button>
                             </div>
                         </div>
                     </div>
@@ -219,7 +220,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-server mr-2"></i><br>Backend Developer</h5>
                                 <p class="card-text">Develop powerful server-side logic and ensure performance and scalability.</p>
-                                <a href="backend-developer.html" class="btn btn-outline-primary btn-sm">Apply Now!</a>
+                                <button class="btn btn-outline-primary btn-sm apply-btn" data-toggle="modal" data-target="#applyModal">Apply Now!</button>
                             </div>
                         </div>
                     </div>
@@ -230,7 +231,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-paint-brush mr-2"></i><br>UX/UI Designer</h5>
                                 <p class="card-text">Design intuitive, user-friendly interfaces and create engaging experiences.</p>
-                                <a href="ux-designer.html" class="btn btn-outline-primary btn-sm">Apply Now!</a>
+                                <button class="btn btn-outline-primary btn-sm apply-btn" data-toggle="modal" data-target="#applyModal">Apply Now!</button>
                             </div>
                         </div>
                     </div>
@@ -241,7 +242,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-project-diagram mr-2"></i><br>Project Manager</h5>
                                 <p class="card-text">Lead projects, coordinate with teams, and ensure timely delivery.</p>
-                                <a href="project-manager.html" class="btn btn-outline-primary btn-sm">Apply Now!</a>
+                                <button class="btn btn-outline-primary btn-sm apply-btn" data-toggle="modal" data-target="#applyModal">Apply Now!</button>
                             </div>
                         </div>
                     </div>
@@ -252,7 +253,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-bullhorn mr-2"></i><br>Marketing Manager</h5>
                                 <p class="card-text">Oversee marketing campaigns, develop strategies, and grow our brand.</p>
-                                <a href="marketing-manager.html" class="btn btn-outline-primary btn-sm">Apply Now!</a>
+                                <button class="btn btn-outline-primary btn-sm apply-btn" data-toggle="modal" data-target="#applyModal">Apply Now!</button>
                             </div>
                         </div>
                     </div>
@@ -260,12 +261,96 @@
 
                 <!-- Application Call to Action -->
                 <p class="mb-4">Interested in any of these positions? Click on the links above to Apply Now! and apply.</p>
-                <a class="btn btn-primary py-3 px-5" href="apply-now.html">Apply Now</a>
+                <button class="btn btn-primary py-3 px-5" data-toggle="modal" data-target="#applyModal">Apply Now</button>
             </div>
         </div>
     </div>
 </div>
 <!-- Careers Page End -->
+
+<!-- Modal for Job Application Form -->
+<div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="applyModalLabel">Job Application</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <!-- Form elements (unchanged) -->
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="currentEmployer">Current Employer</label>
+                        <input type="text" class="form-control" id="currentEmployer" name="currentEmployer" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ctc">Current CTC</label>
+                        <input type="text" class="form-control" id="ctc" name="ctc" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="noticePeriod">Notice Period</label>
+                        <input type="text" class="form-control" id="noticePeriod" name="noticePeriod" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="skillset">Skillset</label>
+                        <input type="text" class="form-control" id="skillset" name="skillset" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Current Location</label>
+                        <input type="text" class="form-control" id="location" name="location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" name="state" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" class="form-control" id="country" name="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode">Zipcode</label>
+                        <input type="text" class="form-control" id="zipcode" name="zipcode" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Upload Resume</label>
+                        <input type="file" class="form-control" id="resume" name="resume" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <style>
 /* General Styling */
 .career-page-body {
@@ -537,7 +622,9 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- JavaScript Libraries -->
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../code.jquery.com/jquery-3.4.1.min.js" type="a7834493ee1246c82f07949c-text/javascript"></script>
     <script src="../../../cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js" type="a7834493ee1246c82f07949c-text/javascript"></script>
