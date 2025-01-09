@@ -113,38 +113,123 @@
                     </div>  
                     <div class="nav-item dropdown">
                         <a href="about.html" class="nav-item nav-link">About Us</a>
-                    </div>                   
+                    </div> 
+                    <style>
+/* Adjusting dropdown menu width and text overflow */
+.dropdown-menu {
+    min-width: 600px; /* Ensure the minimum width is appropriate */
+    max-width: 1000px; /* Set a max-width to prevent excessive horizontal expansion */
+    max-height: 400px;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    padding: 0 15px; /* Adjust padding to move content slightly to the left */
+    left: 50%; /* Center the dropdown horizontally */
+    transform: translateX(-50%); /* Offset the left positioning to fully center it */
+}
+
+/* Style for the dropdown titles */
+.dropdown-header {
+    font-weight: bold; /* Make titles bold */
+    color: #007bff; /* Set the title color to blue (or change as needed) */
+    margin-bottom: 10px; /* Add spacing between title and items */
+}
+
+/* Ensure dropdown items are not cut off */
+.dropdown-item {
+    white-space: nowrap; /* Prevent text from breaking into multiple lines */
+    overflow: hidden; /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+/* Adjust the layout of the dropdown menu */
+.dropdown-menu .row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of columns */
+}
+
+.dropdown-menu .col-4 {
+    max-width: 33.33%; /* Set width for each column */
+    flex: 1; /* Distribute space evenly among columns */
+    padding-right: 10px; /* Add padding to prevent text from being too close to the edge */
+}
+
+/* Make dropdown menu responsive on smaller screens */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        min-width: 100%; /* Make the dropdown take full width on small screens */
+        padding: 0 15px; /* Adjust padding for mobile */
+        left: 0; /* Align the dropdown to the left on small screens */
+        transform: none; /* Remove centering transformation */
+    }
+
+    .dropdown-menu .col-4 {
+        max-width: 100%; /* Stack columns on smaller screens */
+    }
+}
+
+                    </style>                  
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <div class="dropdown-menu m-0 p-3" style="min-width: 600px;">
                             <div class="row">
                                 <div class="col-4">
-                                    <a href="about-1.html" class="dropdown-item">About 1</a>
-                                    <a href="service-1.html" class="dropdown-item">Service 1</a>
-                                    <a href="contact-1.html" class="dropdown-item">Contact 1</a>
+                                    <h6 class="dropdown-header">INFRA SUPPORT</h6>
+                                    <a href="end-user-computing.html" class="dropdown-item">End-User Computing</a>
+                                    <a href="cloud-infrastructure.html" class="dropdown-item">Cloud Infrastructure</a>
+                                    <a href="networking-server-admin.html" class="dropdown-item">Networking & Server Administration</a>
+                                    <a href="security-surveillance.html" class="dropdown-item">Security & Surveillance Systems</a>
+                                    <a href="data-center-management.html" class="dropdown-item">Data Center Management</a>
+                                    <a href="structured-cabling.html" class="dropdown-item">Structured Cabling</a>
                                 </div>
                                 <div class="col-4">
-                                    <a href="about-2.html" class="dropdown-item">About 2</a>
-                                    <a href="service-2.html" class="dropdown-item">Service 2</a>
-                                    <a href="contact-2.html" class="dropdown-item">Contact 2</a>
+                                    <h6 class="dropdown-header">SOFTWARE DEVELOPMENT</h6>
+                                    <a href="web-design-development.html" class="dropdown-item">Web Design and Development</a>
+                                    <a href="application-development.html" class="dropdown-item">Application Development</a>
+                                    <a href="mobile-app-development.html" class="dropdown-item">Mobile Application Development</a>
+                                    <a href="gaming-app-development.html" class="dropdown-item">Gaming Application Development</a>
+                                    <a href="payroll-software-service.html" class="dropdown-item">Payroll Software Service</a>
                                 </div>
                                 <div class="col-4">
-                                    <a href="about-3.html" class="dropdown-item">About 3</a>
-                                    <a href="service-3.html" class="dropdown-item">Service 3</a>
-                                    <a href="contact-3.html" class="dropdown-item">Contact 3</a>
+                                    <h6 class="dropdown-header">MANPOWER RESOURCING</h6>
+                                    <a href="recruitment-processing.html" class="dropdown-item">Recruitment Processing Outsource</a>
+                                    <a href="staffing.html" class="dropdown-item">Temporary and Permanent Staffing</a>
+                                    <a href="it-support-resources.html" class="dropdown-item">IT Support Resources</a>
+                                    <a href="statutory-compliances.html" class="dropdown-item">Statutory Compliances</a>
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
+                    
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="service-1.html" class="dropdown-item">Service 1</a>
-                            <a href="service-2.html" class="dropdown-item">Service 2</a>
-                            <a href="service-3.html" class="dropdown-item">Service 3</a>
-                            <a href="service-detail.html" class="dropdown-item">Service Detail</a>
+                        <div class="dropdown-menu m-0 p-3" style="min-width: 800px; max-height: 400px; overflow-y: auto;">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h6 class="dropdown-header">SYSTEMS AND SERVERS</h6>
+                                    <a href="servers.html" class="dropdown-item">Servers</a>
+                                    <a href="personal-computers.html" class="dropdown-item">Personal Computers</a>
+                                    <a href="projectors.html" class="dropdown-item">Projectors</a>
+                                    <a href="printers-scanners.html" class="dropdown-item">Printers & Scanners</a>
+                                </div>
+                                <div class="col-4">
+                                    <h6 class="dropdown-header">NETWORK AND SECURITY</h6>
+                                    <a href="surveillance-systems.html" class="dropdown-item">Surveillance Systems</a>
+                                    <a href="switches-routers.html" class="dropdown-item">Switches & Routers</a>
+                                    <a href="managed-wifi.html" class="dropdown-item">Managed Wifi</a>
+                                    <a href="structured-cables.html" class="dropdown-item">Structured Cables</a>
+                                    <a href="data-security-firewall.html" class="dropdown-item">Data Security & Firewall</a>
+                                </div>
+                                <div class="col-4">
+                                    <h6 class="dropdown-header">SOFTWARE SERVICES</h6>
+                                    <a href="rightfax-server.html" class="dropdown-item">Rightfax Server</a>
+                                    <a href="school-management-system.html" class="dropdown-item">School Management </a>
+                                    <a href="document-management-system.html" class="dropdown-item">Document Management </a>
+                                    <a href="retail-management-system.html" class="dropdown-item">Retail Management </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    
                     <div class="nav-item dropdown">
                         <a href="careers.html" class="nav-item nav-link">Careers</a>
                     </div> 
