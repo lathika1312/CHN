@@ -42,6 +42,23 @@
 </div>
 <!-- Spinner End -->
 
+<style>
+/* Keyframes for rotation */
+@keyframes rotateLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Applying rotation animation to the logo */
+.logo-rotate {
+    animation: rotateLogo 2s linear infinite;
+}
+</style>
+
 
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
