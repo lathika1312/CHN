@@ -98,14 +98,23 @@
 
 
     <style>
-        /* Add this to your styles.css file */
 .nav-link {
     color: black !important;  /* Default static color */
     transition: color 0.3s ease-in-out;  /* Smooth transition for color change */
 }
 
 .nav-link:hover {
-    color: #06A3DA !important;  /* Hover color */
+    color: #06A3DA;  /* Hover color */
+}
+
+
+/* Optional: Adjust the navbar text color to black for the whole navbar */
+.navbar .nav-link .navbar-light {
+    color: black !important;  /* Enforce black color for nav links */
+}
+
+.navbar-nav {
+    color: black !important;  /* Ensure the nav text color remains black */
 }
 
      </style>
