@@ -115,6 +115,13 @@
                         <a href="about.html" class="nav-item nav-link">About Us</a>
                     </div> 
                     <style>
+                       .navbar .nav-link .navbar-light {
+    color: rgb(255, 255, 255) !important;  /* Enforce black color for nav links */
+}
+.nav-link {
+    color: rgb(255, 255, 255) !important;  /* Default static color */
+    transition: color 0.3s ease-in-out;  /* Smooth transition for color change */
+}
 /* Adjusting dropdown menu width and text overflow */
 .dropdown-menu {
     min-width: 600px; /* Ensure the minimum width is appropriate */
